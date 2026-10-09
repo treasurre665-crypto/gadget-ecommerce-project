@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GADGET | Smart Tech. Better Living.</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <link rel="stylesheet" href="gadget.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a href="#home" class="logo">
+                GAD<span>GET</span>
+            </a>
+
+            <nav class="navbar" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#deals">Today's Deal</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <a href="signup.html" class="signup-btn nav-signup">Sign Up</a>
+            </nav>
+
+            <div class="header-actions">
+
+                <button type="button" id="headerSearchBtn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button type="button" id="wishlistBtn" aria-label="Favorites">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="wishlist-count">0</span>
+                </button>
+
+                <button type="button" class="cart-button" id="cartButton" aria-label="Shopping cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart-count">0</span>
+                </button>
+
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">YOUR TRUSTED GADGETS</p>
+
+                    <h1>
+                        Your Trusted Gadgets
+                        <br>
+                        device partner
+                    </h1>
+
+                    <p class="hero-text">
+                        Discover the latest and greatest gadgets that will enhance your digital lifestyle.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#products" class="btn btn-primary">
+                            Order Now
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#deals" class="btn btn-outline">
+                            Explore More
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Hero gadget image -->
+                <div class="hero-image">
+                    <img
+                        src="images/hero-gadgets.png"
+                        alt="Collection of modern gadgets including a laptop, smartphone, headphones, smartwatch and game controller"
+                    >
+                </div>
+
+            </div>
+        </section>
+        <section class="shop-tools">
+
+            <div class="container shop-tools-container">
+
+                <div class="category-dropdown-wrapper">
+                    <button
+                        type="button"
+                        class="category-trigger"
+                        id="categoryTrigger"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-grip"></i>
+                        <span id="categoryLabel">Category</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+
+                    <div class="category-dropdown" id="categoryDropdown" hidden>
+                        <button type="button" class="category-option active" data-category="all">All Categories</button>
+                        <button type="button" class="category-option" data-category="mobile-accessories">Mobile Accessories</button>
+                        <button type="button" class="category-option" data-category="game-devices">Game Devices</button>
+                        <button type="button" class="category-option" data-category="audio-accessories">Audio Accessories</button>
+                        <button type="button" class="category-option" data-category="tv-display">TV &amp; Display</button>
+                        <button type="button" class="category-option" data-category="external-storage">External Storage</button>
+                        <button type="button" class="category-option" data-category="laptop-computer">Laptop &amp; Computer</button>
+                    </div>
+                </div>
+
+                <form class="search-form" id="searchForm" role="search">
+
+                    <label for="search" class="sr-only">
+                        Search products
+                    </label>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="search"
+                        id="search"
+                        name="search"
+                        placeholder="Search..."
+                    >
+
+                </form>
+
+            </div>
+        </section>
+        <section class="categories" id="categories">
+
+            <div class="container">
+
+                <div class="category-grid">
+
+                    <a href="#products" class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <h3>Mobile Accessories</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3>Game Devices</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-ear-listen"></i>
+                        </div>
+                        <h3>Audio Accessories</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-tv"></i>
+                        </div>
+                        <h3>TV &amp; Display</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-hard-drive"></i>
+                        </div>
+                        <h3>External Storage</h3>
+                    </a>
+
+                    <a href="#products" class="category-card">
+                        <div class="category-icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h3>Laptop &amp; Computer</h3>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <section class="deals" id="deals">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div class="section-title">
+
+                        <span class="section-accent"></span>
+
+                        <h2 id="products">Deal of the Day</h2>
+
+                        <div class="offer-timer">
+                            <span>Offer Ends:</span>
+                            <strong id="offerTimer">12h : 12m : 12s</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="product-grid" id="productGrid">
+
+                    
+                    <article class="product-card" data-page="1" data-category="audio-accessories">
+                        <div class="product-image">
+                            <img src="images/airpods-648.png.jpg" alt="Airdopes 648">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Airdopes 648</h3>
+                                <button type="button" aria-label="Save Airdopes 648">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                                <span>(1102 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$28</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="1" data-category="audio-accessories">
+                        <div class="product-image">
+                            <img src="images/smart-audio-speaker.png.jpg" alt="Smart Audio Speaker">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Smart Audio Speaker</h3>
+                                <button type="button" aria-label="Save Smart Audio Speaker">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.6</span>
+                                <span>(845 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$120</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="2" data-category="tv-display">
+                        <div class="product-image">
+                            <img src="images/security-camera.jpg" alt="Security Camera CCTV">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Security Camera CCTV</h3>
+                                <button type="button" aria-label="Save Security Camera">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>3.9</span>
+                                <span>(1548 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$150</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="2" data-category="mobile-accessories">
+                        <div class="product-image">
+                            <img src="images/air freshner.jpg" alt="Auto Air Freshener">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Auto Air Freshener</h3>
+                                <button type="button" aria-label="Save Auto Air Freshener">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                                <span>(1102 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$40</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="3" data-category="game-devices">
+                        <div class="product-image">
+                            <img src="images/drone.jpg" alt="Quadrocopter Drone">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Quadrocopter Drone</h3>
+                                <button type="button" aria-label="Save Quadrocopter Drone">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                                <span>(1102 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$75</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="3" data-category="mobile-accessories">
+                        <div class="product-image">
+                            <img src="images/phone.jpg" alt="Prcus PRO Black">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Prcus PRO (Black)</h3>
+                                <button type="button" aria-label="Save Prcus PRO">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.6</span>
+                                <span>(845 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$39</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="4" data-category="game-devices">
+                        <div class="product-image">
+                            <img src="images/gamepad.png.png" alt="Gamepad AF6">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Gamepad AF6</h3>
+                                <button type="button" aria-label="Save Gamepad AF6">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>3.9</span>
+                                <span>(1548 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$150</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    
+                    <article class="product-card" data-page="4" data-category="laptop-computer">
+                        <div class="product-image">
+                            <img src="images/laptop.jpg" alt="Logitech G502 Gaming Mouse">
+                        </div>
+
+                        <div class="product-info">
+                            <div class="product-name-row">
+                                <h3>Logitech G502</h3>
+                                <button type="button" aria-label="Save Logitech G502">
+                                    <i class="fa-regular fa-bookmark"></i>
+                                </button>
+                            </div>
+
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <span>4.8</span>
+                                <span>(1102 Review)</span>
+                            </div>
+
+                            <div class="product-bottom">
+                                <strong class="price">$50</strong>
+                                <button type="button" class="add-to-cart">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <p class="no-results" id="noResults" hidden>
+                        No products match your search or category.
+                    </p>
+                </div>
+
+                <nav class="pagination" aria-label="Product pagination">
+
+                    <button
+                        type="button"
+                        class="page-number active"
+                        data-page="1"
+                        aria-label="Go to product page 1"
+                        aria-current="page">
+                        1
+                    </button>
+
+                    <button
+                        type="button"
+                        class="page-number"
+                        data-page="2"
+                        aria-label="Go to product page 2">
+                        2
+                    </button>
+
+                    <button
+                        type="button"
+                        class="page-number"
+                        data-page="3"
+                        aria-label="Go to product page 3">
+                        3
+                    </button>
+
+                    <button
+                        type="button"
+                        class="page-number"
+                        data-page="4"
+                        aria-label="Go to product page 4">
+                        4
+                    </button>
+
+                    <button
+                        type="button"
+                        class="page-number next-page"
+                        data-page="next"
+                        aria-label="Next product page">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                </nav>
+
+            </div>
+        </section>
+        <section class="promotions">
+
+            <div class="container">
+
+                <div class="promotion-grid">
+
+                    <a href="#" class="promotion-card">
+                        <img
+                            src="images/new-product-banner.png"
+                            alt="New product promotion featuring headphones"
+                        >
+                    </a>
+
+                    <a href="#" class="promotion-card">
+                        <img
+                            src="images/be-a-pro-banner.png"
+                            alt="Be a pro online training promotion featuring a camera"
+                        >
+                    </a>
+
+                </div>
+
+                <a href="#" class="wide-promotion">
+                    <img
+                        src="images/smartphone-controller-banner.png"
+                        alt="Smartphone controller promotion with 70 percent off"
+                    >
+                </a>
+
+            </div>
+        </section>
+        <section class="testimonials">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <p class="eyebrow">CUSTOMER STORIES</p>
+
+                    <h2>Testimonials</h2>
+
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit
+                        aliqua dolor do amet sint.
+                    </p>
+
+                </div>
+
+
+                <div class="testimonial-content">
+
+                    <div class="quote-mark">
+                        &ldquo;
+                    </div>
+
+                    <blockquote id="testimonialQuote">
+                        Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Iste voluptatem rerum vero ducimus 
+                        odio praesentium in aliquam, est quasi similique!
+                    </blockquote>
+
+                    <div class="testimonial-author">
+                        <strong id="testimonialName">Cameron Williamson</strong>
+                        <span id="testimonialRole">Project head of Turbo Electrolight</span>
+                    </div>
+
+                    <div class="testimonial-image">
+                        <img
+                            id="testimonialImage"
+                            src="images/cameron-williamson.jpg"
+                            alt="Cameron Williamson"
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="testimonial-controls">
+
+                    <button type="button" id="prevTestimonial" aria-label="Previous testimonial">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button type="button" id="nextTestimonial" aria-label="Next testimonial">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                </div>
+
+
+                <div class="testimonial-progress">
+                    <span></span>
+                </div>
+
+            </div>
+        </section>
+        <section class="newsletter" id="contact">
+
+            <div class="container newsletter-container">
+
+                <div class="newsletter-heading">
+                    <h2>Subscribe newsletter</h2>
+                    <p>
+                        Get the latest updates and offers straight to your inbox.
+                    </p>
+                </div>
+
+                <form class="newsletter-form">
+
+                    <label for="email" class="sr-only">
+                        Email address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email address"
+                        required
+                    >
+
+                    <button type="submit" aria-label="Subscribe">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+                <div class="customer-service">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                    <div>
+                        <span>Call Us 24/7</span>
+                        <strong>(207) 555-0119</strong>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    GAD<span>GET</span>
+                </a>
+
+                <p>Smart Tech. Better Living.</p>
+
+            </div>
+
+
+            <nav class="footer-nav" aria-label="Footer navigation">
+
+                <a href="#home">Home</a>
+
+                <a href="#products">Products</a>
+
+                <a href="#deals">Today's Deal</a>
+
+                <a href="#contact">Contact Us</a>
+
+            </nav>
+
+
+            <div class="footer-socials">
+
+                <a href="#" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#" aria-label="X">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a href="#" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; 2025 GADGET. All rights reserved.
+            </p>
+
+            <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+
+        </div>
+
+    </footer>
+
+    
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h3>Your cart</h3>
+            <button type="button" id="closeCart" aria-label="Close cart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-drawer-footer">
+            <div class="cart-subtotal">
+                <span>Subtotal</span>
+                <strong id="cartSubtotal">$0</strong>
+            </div>
+            <button type="button" class="btn btn-primary cart-checkout" id="checkoutBtn">
+                Checkout
+            </button>
+        </div>
+    </aside>
+
+    <aside class="cart-drawer favorites-drawer" id="favoritesDrawer" aria-hidden="true">
+        <div class="cart-drawer-header">
+            <h3>Your favorites</h3>
+            <button type="button" id="closeFavorites" aria-label="Close favorites">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="favoritesItems">
+            <p class="cart-empty">No favorites yet. Tap the bookmark on any product to save it.</p>
+        </div>
+    </aside>
+
+
+    <div class="toast" id="toast"></div>
+
+    <script src="gadget.js" defer></script>
+</body>
+</html>
