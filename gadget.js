@@ -494,4 +494,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+  // Exposed for gadget-demo.js (demo signup + checkout flow)
+  window.GadgetDemo = { cart, saveCart, renderCart, showToast, closeCartDrawer };
 });
